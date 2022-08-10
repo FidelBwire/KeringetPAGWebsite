@@ -1,0 +1,56 @@
+<div class="" *ngIf="fullPageDisplay; else shortDisplay">
+   <app-pages-top [pageTitle]="'Sermons'"></app-pages-top>
+   <div class="container-lg">
+      <h1>Implement Later</h1>
+   </div>
+</div>
+<ng-template #shortDisplay>
+   <div class="">
+      <h4 class="font-italic">Recent Sermons</h4>
+      <ol class="list-unstyled mb-0">
+         <li>
+            <div class="row flex-md-row">
+               <div class="col-auto d-flex flex-column text-primary py-auto">
+                  <i class="fab fa-youtube fa-3x text-danger"></i></div>
+               <div class="col d-flex flex-column">
+                  <span class="sermon-date">Thursday, August 08, 2015</span>
+                  <h6 class="text-dark">Abounding in the work of God</h6>
+               </div>
+            </div>
+         </li>
+         <li>
+            <div class="row flex-md-row">
+               <div class="col-auto d-flex flex-column text-primary py-auto">
+                  <i class="fa fa-headphones fa-3x text-dark" aria-hidden="true"></i> </div>
+               <div class="col d-flex flex-column">
+                  <span class="sermon-date">Thursday, August 08, 2015</span>
+                  <h6 class="text-dark">Abounding in the work of God</h6>
+               </div>
+            </div>
+         </li>
+         <li>
+            <div class="row flex-md-row">
+               <div class="col-auto d-flex flex-column text-primary py-auto">
+                  <i class="fab fa-youtube fa-3x text-danger"></i></div>
+               <div class="col d-flex flex-column">
+                  <span class="sermon-date">Thursday, August 08, 2015</span>
+                  <h6 class="text-dark">Abounding in the work of God</h6>
+               </div>
+            </div>
+         </li>      
+         <li>
+            <div class="row flex-md-row">
+               <div class="col-auto d-flex flex-column text-primary py-auto">
+                  <i class="fab fa-youtube fa-3x text-danger"></i></div>
+               <div class="col d-flex flex-column">
+                  <span class="sermon-date">Thursday, August 08, 2015</span>
+                  <h6 class="text-dark">Abounding in the work of God</h6>
+               </div>
+            </div>
+         </li>
+         <li>
+            <a href="">More&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i> </a>
+         </li>
+      </ol>
+   </div>
+</ng-template>

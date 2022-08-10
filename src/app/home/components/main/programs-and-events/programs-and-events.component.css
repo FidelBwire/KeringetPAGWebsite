@@ -1,0 +1,14 @@
+.program {
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+   position: relative;
+}
+
+.border-bottom {
+   border-color: hsl(0, 0%, 70%) !important;
+   border-bottom-style: dashed !important;
+}
+
+.smaller {
+   font-size: 0.8em;
+}

@@ -1,0 +1,8 @@
+<div class="row flex-md-row">
+   <div class="col-md-6 py-3" 
+         *ngFor="let doctrine of doctrines | keyvalue : asIsOrder">
+      <h5 class="text-capitalize">Our {{doctrine.key}}</h5>
+      <p>{{doctrine.value}}</p>
+      <!-- <div class="btn btn-sm btn-outline-primary">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></div> -->
+   </div>
+</div>
