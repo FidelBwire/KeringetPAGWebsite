@@ -1,34 +1,37 @@
-<div class="mb-2">
-   <div class="row g-0 border shadow-lg rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 
-                  position-relative">
-      <div class="col-md-4 d-none d-lg-block bg-secondary">
-         <!-- Churh Pic -->
-      </div>
-      <div class="col-md-8 p-4 d-flex flex-column position-static">
-         <h3 class="mb-0">Welcome</h3>
-         <p class="card-text mb-auto">We’d love to meet you! Come check us out this SUNDAY where 
-            you can meet us and see if New Life Church might be a good fit for you. Our heart and 
-            soul is to introduce and connect people with the living and powerful God.</p>
-         <div class="row flex-md-row py-4">
-            <div class="col d-flex flex-column">
-               <div class="row flex-md-row">
-                  <div class="col-auto d-flex flex-column text-primary py-auto"><i class="fas fa-church fa-2x"></i></div>
-                  <div class="col d-flex flex-column">
-                     <h5>Fellowship with Us</h5>
-                  </div>
-                  <p>We would love to see you and your family & friends this weekend in our church at 10 am.</p>
-               </div>
-            </div>            
-            <div class="col d-flex flex-column">
-               <div class="row flex-md-row">
-                  <div class="col-auto d-flex flex-column text-primary py-auto"><i class="fas fa-bible fa-2x"></i></div>
-                  <div class="col d-flex flex-column">
-                     <h5>What We Believe</h5>
-                  </div>
-                  <p>We believe that the Bible is God’s Word. It is accurate, authoritative and applicable to our everyday lives.</p>
-               </div>
-            </div>            
-         </div>
-      </div>      
+<div class="row row-cols-1 g-0 border shadow-lg rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 
+               position-relative">
+   <div class="col col-lg-4 d-none d-lg-block" style="background-color: rgb(197, 197, 197);">
+      <img class="img-fluid" src="../../../../../assets/images/church-123.jpg" alt="">
    </div>
+   <div class="col col-lg-8 ps-3 py-2">
+      <h3 class="mb-0">Welcome</h3>
+      <p class="card-text mb-auto">We’d love to meet you! Come check us out this SUNDAY where 
+         you can meet us and see if Keringet Pentecostal Assemblies of God (PAG) church might be a good fit for you. Our heart and 
+         soul is to introduce and connect people with the living and powerful God.</p>
+      <div class="row row-cols-1 row-cols-md-2 flex-md-row py-1">
+         <div class="col d-flex flex-column py-3">
+            <div class="row flex-md-row">
+               <div class="col-auto d-flex flex-column text-primary py-auto"><i class="fas fa-bible fa-2x"></i></div>
+               <div class="col d-flex flex-column">
+                  <h5>What We Believe</h5>
+               </div>
+               <app-beliefs [fullDisplay]="false"></app-beliefs>
+               <a class="text-primary">Learn More</a>
+               <!-- <p>We believe that the Bible is God’s Word. It is accurate, authoritative and applicable to our everyday lives.</p> -->
+            </div>
+         </div>
+         <div class="col d-flex flex-column py-2">
+            <div class="row flex-md-row">
+               <div class="col-auto d-flex flex-column text-primary py-auto"><i class="fas fa-church fa-2x"></i></div>
+               <div class="col d-flex flex-column">
+                  <h5>Fellowship with Us</h5>
+               </div>
+               <p>We would love to see you and your family & friends this weekend in our church at 10 am.</p>
+            </div>
+         </div>              
+      </div>
+   </div>      
+</div>
+<div class="d-lg-none fs-5">
+   <app-about [fullPageDisplay]=false></app-about>
 </div>

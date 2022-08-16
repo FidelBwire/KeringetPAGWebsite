@@ -4,7 +4,7 @@ export class ChurchEvent {
    imageName!: string;
    theme!: string;
    venue: string = "P.A.G, Ole Nguruone";
-   speaker: string = "Pst. Joshua Matara"
+   speaker: string = "Pst. Joshua Matara";
    description!: string;
    entryFee!: number;
 
@@ -15,6 +15,7 @@ export class ChurchEvent {
       this.theme = theme;
       this.description = description;
       this.entryFee = entryFee;
+
       if(venue != undefined) {
          this.venue = venue;
       }

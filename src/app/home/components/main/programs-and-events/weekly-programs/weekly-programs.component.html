@@ -1,0 +1,32 @@
+<h6 class="text-uppercase text-center text-black fw-bold">Weekly Pograms</h6>
+<div class="d-none d-m-block d-lg-block d-flex px-3 px-md-3 px-md-5">
+   <table class="table table-small table-small table-striped fw-semibold">
+      <thead>
+         <tr class="small">
+            <td></td>
+            <td>Program</td>
+            <td class="text-end">From:&nbsp;&nbsp;</td>
+            <td class="text-end">To:&nbsp;&nbsp;</td>
+         </tr>
+      </thead>
+      <tbody>
+         <tr *ngFor="let weeklyProgram of weeklyPrograms">
+            <td class="small">{{weeklyProgram.day}}</td>
+            <td class="small">{{weeklyProgram.programName}}</td>
+            <td class="small text-end">{{weeklyProgram.startTime}}</td>
+            <td class="small text-end">{{weeklyProgram.endTime}}</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+<div class="d-block d-md-none d-lg-none d-flex">
+   <div class="row row-cols-1">
+      <div class="col py-2" *ngFor="let weeklyProgram of weeklyPrograms">
+         <p class="small text-center py-0 my-0">{{weeklyProgram.day}}</p>
+         <span *ngIf="weeklyProgram.startTime != '' && weeklyProgram.endTime != '' ">
+            <p class="small text-center py-0 my-0">{{weeklyProgram.startTime}} - {{weeklyProgram.endTime}}</p>
+         </span>
+         <p class="small text-center py-0 my-0">{{weeklyProgram.programName}}</p>
+      </div>
+   </div>
+</div>

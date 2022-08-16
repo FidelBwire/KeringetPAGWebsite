@@ -1,0 +1,7 @@
+<div *ngIf="fullPageDisplay; else shortDisplay">
+
+</div>
+<ng-template #shortDisplay>
+   <h4>Rev. Joshua Matara</h4>
+   <p *ngFor="let paragraph of aboutThePastor">{{paragraph}}</p>
+</ng-template>

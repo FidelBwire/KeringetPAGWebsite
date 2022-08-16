@@ -8,6 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class SermonsComponent implements OnInit {
 
   @Input() fullPageDisplay: boolean = true;
+  sermons = [];
 
   constructor() { }
 

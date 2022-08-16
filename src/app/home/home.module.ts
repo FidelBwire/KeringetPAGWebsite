@@ -21,6 +21,11 @@ import { LocationComponent } from './components/utils/location/location.componen
 import { ContactComponent } from './components/utils/contact/contact.component';
 import { ImageComponent } from './components/utils/image/image.component';
 import { PagesTopComponent } from './components/utils/pages-top/pages-top.component';
+import { VersesCarouselComponent } from './components/main/verses-carousel/verses-carousel.component';
+import { StringPipe } from './customPipes/string.pipe';
+import { BeliefsComponent } from './components/main/welcome/beliefs/beliefs.component';
+import { ChurchLeadershipComponent } from './components/utils/church-leadership/church-leadership.component';
+import { WeeklyProgramsComponent } from './components/main/programs-and-events/weekly-programs/weekly-programs.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +46,12 @@ import { PagesTopComponent } from './components/utils/pages-top/pages-top.compon
     LocationComponent,
     ContactComponent,
     ImageComponent,
-    PagesTopComponent
+    PagesTopComponent,
+    VersesCarouselComponent,
+    StringPipe,
+    BeliefsComponent,
+    ChurchLeadershipComponent,
+    WeeklyProgramsComponent
   ],
   imports: [
     CommonModule,

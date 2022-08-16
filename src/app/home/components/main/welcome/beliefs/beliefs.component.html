@@ -1,0 +1,8 @@
+<div *ngIf="fullDisplay; else shortDisplay">
+   <ol type="1">
+      <li class="py-1" *ngFor="let belief of beliefs">{{belief}}</li>
+   </ol>   
+</div>
+<ng-template #shortDisplay>
+   <p class="py-1">{{beliefs[1]}}</p>                  
+</ng-template>

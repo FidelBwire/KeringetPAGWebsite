@@ -1,8 +1,47 @@
-<div class="row flex-md-row">
-   <div class="col-md-6 py-3" 
+<div class="row row-cols-1 row-cols-md-2 flex-md-row" id="doctrine">
+   <div class="col py-3" 
          *ngFor="let doctrine of doctrines | keyvalue : asIsOrder">
       <h5 class="text-capitalize">Our {{doctrine.key}}</h5>
       <p>{{doctrine.value}}</p>
       <!-- <div class="btn btn-sm btn-outline-primary">Read More <i class="fa fa-arrow-right" aria-hidden="true"></i></div> -->
    </div>
+</div>
+
+<div class="row">
+   <ngb-accordion #acc="ngbAccordion" activeIds="ngb-panel-0">
+      <ngb-panel>
+         <ng-template ngbPanelTitle>
+            <h5 class="text-primary">What are our Beliefs?</h5>
+         </ng-template>
+         <ng-template ngbPanelContent>
+            <app-beliefs></app-beliefs>
+         </ng-template>
+      </ngb-panel>
+      <ngb-panel>
+         <ng-template ngbPanelTitle>
+            <h5 class="text-primary">What are our Goals?</h5>
+         </ng-template>
+         <ng-template ngbPanelContent>
+            <ol type="1">
+               <li class="py-1" *ngFor="let goal of goals">{{goal}}</li>
+            </ol>
+         </ng-template>
+      </ngb-panel>
+      <ngb-panel>
+         <ng-template ngbPanelTitle>
+            <h5 class="text-primary">What is our Pledge to Christianity?</h5>
+         </ng-template>
+         <ng-template ngbPanelContent>
+            <p *ngFor="let pledge of pledges">{{pledge}}</p>
+         </ng-template>
+      </ngb-panel>
+      <ngb-panel>
+         <ng-template ngbPanelTitle>
+            <h5 class="text-primary">Who is Our Church Leader?</h5>
+         </ng-template>
+         <ng-template ngbPanelContent>
+            <app-church-leadership [fullPageDisplay]="false"></app-church-leadership>
+         </ng-template>
+      </ngb-panel>
+   </ngb-accordion>
 </div>

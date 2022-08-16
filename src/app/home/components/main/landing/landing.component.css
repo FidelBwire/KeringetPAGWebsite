@@ -1,0 +1,15 @@
+#landing {
+   /* background: url("../../../../../assets/images/lines-2-1200128.jpg") no-repeat center; */
+   background-size: cover;
+   height: 85vh;
+}
+
+#landing-content {
+   padding-top: 10vh;   
+}
+
+@media (min-width: 768px) {
+   #landing-content {
+      padding-top: 20vh;   
+   }
+}

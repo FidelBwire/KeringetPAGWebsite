@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ChurchEvent } from 'src/app/model/ChurchEvent';
+import { Program } from 'src/app/model/Program';
 
 @Component({
   selector: 'app-programs-and-events',
@@ -10,24 +11,12 @@ export class ProgramsAndEventsComponent implements OnInit {
 
   @Input() fullPageDisplay: boolean = true;
 
-  events: ChurchEvent[] = [];
-  weeklytimeSchedules = new Map();
+  events: ChurchEvent[] = [];  
 
   constructor() { }
 
-  ngOnInit(): void {
-    this.initializeWeeklytimeSchedules();
+  ngOnInit(): void {    
     this.initializeEvents();
-  }
-
-  initializeWeeklytimeSchedules() {
-    this.weeklytimeSchedules.set("Monday", "9:00 - 17:00");
-    this.weeklytimeSchedules.set("Tuesday", "9:00 - 17:00");
-    this.weeklytimeSchedules.set("Wednesday", "9:00 - 17:00");
-    this.weeklytimeSchedules.set("Thursday", "9:00 - 17:00");
-    this.weeklytimeSchedules.set("Friday", "9:00 - 17:00");
-    this.weeklytimeSchedules.set("Saturday", "9:00 - 17:00");
-    this.weeklytimeSchedules.set("Sunday", "9:00 - 17:00");
   }
 
   initializeEvents() {
@@ -35,8 +24,6 @@ export class ProgramsAndEventsComponent implements OnInit {
                         new Date(), "image1.jpg"));
     this.events.push(new ChurchEvent("Easter Holidays", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae voluptate sapiente", 0,
                         new Date(), "image1.jpg", "Jerusalem"));
-    this.events.push(new ChurchEvent("Christmas Holidays", "Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis beatae voluptate sapiente aliquid, laudantium alias atque quibusdam! Provident, pariatur? Nobis assumenda accusamus beatae sapiente totam inventore iste fugit explicabo quibusdam?", 0,
-                        new Date(), "image1.jpg"));
   }
 
   getEvents(numberOfEvents: number = 3): ChurchEvent[] {
